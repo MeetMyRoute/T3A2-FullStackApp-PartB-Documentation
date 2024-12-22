@@ -37,8 +37,25 @@
 * `react-router-dom` - Used to handle routing in React apps
 * `vite ` - Used to improve the development experience of building user interfaces
 
+### Source Control Methodology
+We used GitHub to manage all source control. The project was organised into two separate repositories: one for the front-end and one for the back-end. A new branch was created for each feature and once the feature was completed, it was merged into the main branch to ensure a clean and manageable codebase.
+
+<details>
+<summary>GitHub Screenshots</summary>
+
+#### Repositories
+![GitHub Repos](./docs/github-repos.png)  
+
+#### Back-End Branches
+![GitHub BE Branches](./docs/github-be-branch.png)  
+
+#### Front-End Branches
+![GitHub FE Branches](./docs/github-fe-branch.png)  
+
+</details>
+
 ### Project Management & Task Delegation
-We used Discord as our primary platform for communication and Trello for tracking progress. The To-Do list on Trello was organised into Front-End and Back-End tasks. Each card was labelled to identify which feature the task related to and checklists were added to monitor progress and track the remaining steps required to complete each task.
+Discord was used as our primary platform for communication and Trello for tracking progress. The To-Do list on Trello was organised into Front-End and Back-End tasks. Each card was labelled to identify which feature the task related to and checklists were added to monitor progress and track the remaining steps required to complete each task.
 
 We decided to delegate tasks based on features, ensuring that all team members gained hands-on experience in both front-end and back-end development for their assigned features. This approach helped promote a well-rounded understanding of the entire project and allowed for efficient collaboration.
 
