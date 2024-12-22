@@ -54,6 +54,240 @@ We used GitHub to manage all source control. The project was organised into two 
 
 </details>
 
+### Development and production testing
+
+We used our user stories and their associated acceptance criterias to carry out the manual development and production tests.
+
+#### Acceptance Criteria 1: Profile Creation
+
+* The profile creation form should gather basic information such name, location, travel preferences, and goals - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev1.png)
+![Prod test](./docs/prod1.png)
+
+</details>
+<br>
+
+* Users should be able to upload a profile picture - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Prod test](./docs/prod2.png)
+
+</details>
+<br>
+
+* Validation should be included in the form to guarantee that all required fields are filled out - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev2.png)
+![Prod test](./docs/prod3.png)
+
+</details>
+<br>
+
+* Users should be taken to their profile page to view and modify their information after submitting - FAIL:
+
+  * Users are taken to the login page to login then after successfully logging in, they're taken to their profile page
+
+<details>
+<summary>Screenshots</summary>
+
+![Prod test](./docs/prod4.png)
+![Prod test](./docs/prod5.png)
+![Prod test](./docs/prod6.png)
+
+</details>
+<br>
+
+* For broader networking, users should be able to link their social media profiles on the form - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev1.png)
+![Prod test](./docs/prod4.png)
+
+</details>
+<br>
+
+* Before submitting, users should be able to view their profiles on the system - FAIL:
+
+  * Users can only view their profiles on the system after submitting then logging in
+
+<details>
+<summary>Screenshots</summary>
+
+![Prod test](./docs/prod4.png)
+![Prod test](./docs/prod5.png)
+![Prod test](./docs/prod6.png)
+
+</details>
+<br>
+
+* The profile is active after submission, and the user may update their details at any time - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev3.png)
+![Prod test](./docs/prod6.png)
+![Prod test](./docs/prod7.png)
+
+</details>
+<br>
+
+#### Acceptance Criteria 2: Connecting with Other Travelers
+
+* Users should be able to search for travelers with overlapping itineraries using filters like destination and travel dates - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev4.png)
+![Prod test](./docs/prod8.png)
+
+</details>
+<br>
+
+* The system should display traveler profiles that match the selected filters - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev5.png)
+![Prod test](./docs/prod9.png)
+
+</details>
+<br>
+
+* Users should be able to use a search bar to find travelers - FAIL
+
+  * Users can only use the search bar to input in a destination to find travelers, users cannot use the search bar to input travelers to find them that way
+
+<details>
+<summary>Screenshots</summary>
+
+![Prod test](./docs/prod10.png)
+
+</details>
+<br>
+
+* After searching for travelers, users should be able to view the profile status of each traveler (e.g., 'Travelling,' 'Local,' or 'Private') to understand who is currently traveling - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev4.png)
+![Dev test](./docs/dev5.png)
+![Prod test](./docs/prod8.png)
+![Prod test](./docs/prod9.png)
+
+</details>
+<br>
+
+#### Acceptance Criteria 3: Messaging for Collaboration
+
+This feature was initially envisioned as a more interactive way to notify contacts about your travels. It would have allowed for personalised messages and even real-time updates. However, after some planning and initial development using Socket.IO (a library we were unfamiliar with), we realised the complexity of the implementation wouldn't be feasible within our time constraints. As a result, we opted for a simpler solution: a button click that sends a pre-populated message of "Hey [name], I'm traveling to your [city/destination]. Let's connect via social media!". Therefore all of these criterias are a FAIL:
+
+* Users should be able to send files (documents, images, etc.) and view earlier chats.
+
+* Users should be able to send direct messages through the platform, opening in a separate window for a cleaner interface.
+
+* Notifications should be sent to users when they receive messages.
+
+Instead we'll explain the simpler solution still in relation to the acceptance criterias.
+
+* Users search for travelers and if they want to connect, they click the send a message button:
+
+<details>
+<summary>Screenshots</summary>
+
+![Prod test](./docs/prod10.png)
+
+</details>
+<br>
+
+* As it's the same pre-populated message, we decided that users don't really need to view the message/chat. There is still a separate window for users to check who they've either sent a message to or received a message from:
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev6.png)
+![Prod test](./docs/prod11.png)
+
+</details>
+<br>
+
+#### Acceptance Criteria 3: Itinerary Management
+
+* Users should be able to enter dates, travel destinations, and key activities for each trip using the app - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev7.png)
+![Prod test](./docs/prod12.png)
+![Prod test](./docs/prod13.png)
+
+</details>
+<br>
+
+* Itineraries should be customisable by adding or removing destinations, dates, and activities - HALF SUCCESS/FAIL:
+
+  * Destination and dates are required so they cannot be removed. Activities can be added and removed.
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev8.png)
+![Dev test](./docs/dev9.png)
+![Dev test](./docs/dev10.png)
+![Prod test](./docs/prod14.png)
+![Prod test](./docs/prod13.png)
+![Prod test](./docs/prod12.png)
+![Prod test](./docs/prod15.png)
+![Prod test](./docs/prod16.png)
+![Prod test](./docs/prod17.png)
+
+</details>
+<br>
+
+* Users should be able to update specific travel dates and times for planned destinations - HALF SUCCESS/FAIL:
+
+  * Users are able to update dates but not times
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev11.png)
+![Prod test](./docs/prod18.png)
+![Prod test](./docs/prod19.png)
+
+</details>
+<br>
+
+* Users should be able to toggle between a detailed itinerary (dates, destinations, activities) and a simplified itinerary (dates, destinations), and share/view other's simplified itineraries - SUCCESS
+
+<details>
+<summary>Screenshots</summary>
+
+![Dev test](./docs/dev4.png)
+![Dev test](./docs/dev12.png)
+![Dev test](./docs/dev13.png)
+![Prod test](./docs/prod8.png)
+![Prod test](./docs/prod19.png)
+![Prod test](./docs/prod20.png)
+
+</details>
+<br>
+
 ### Project Management & Task Delegation
 We used Discord as our primary platform for communication and Trello for tracking progress. The To-Do list on Trello was organised into Front-End and Back-End tasks. Each card was labelled to identify which feature the task related to and checklists were added to monitor progress and track the remaining steps required to complete each task.
 
