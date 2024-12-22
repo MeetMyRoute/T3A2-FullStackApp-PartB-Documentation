@@ -54,7 +54,46 @@ We used GitHub to manage all source control. The project was organised into two 
 
 </details>
 
-### Development and production testing
+### Amendments to Part A Plan - Wireframes
+
+The app's design primarily conformed to the wireframes, with only slight adjustments made to the content presentation, such as the placement of fields and the overall page layout. However, two key changes were introduced during the development process:
+
+* Profile Page (Edit Profile)
+    * This page was not included in the original Part A documentation
+    * The page allows users to updae their profile information
+    * The layout is kept consistent across all screen sizes
+    * The Back button redirects the user back to the View mode of the Profile page
+
+* Connects Page
+    * Originally designed as the Messages page, this was revised to Connects due to time constraints
+    * This page allows users to view the connections they have made with other users
+    * The layout is kept consistent across all screen sizes
+    * The View Profile button redirects user to the Profile page
+
+Additional changes include:
+
+* NavBar
+    * The Messages tab was renamed to Connects to align with the new Connects page
+
+* Sign Up Page
+    * The Profile Picture field which was previously missing, was added
+    * No responsive design - the layout is kept consistent across all screen sizes
+
+<details>
+<summary>New Wireframes</summary>
+
+#### Desktop View
+![Updated Wireframes Desktop](./docs/updated-wireframes-desktop.png)  
+
+#### Tablet View
+![Updated Wireframes Tablet](./docs/updated-wireframes-tablet.png) 
+
+#### Mobile View
+![Updated Wireframes Mobile](./docs/updated-wireframes-mobile.png)   
+
+</details>
+
+### Development and Production Testing
 
 We used our user stories and their associated acceptance criterias to carry out the manual development and production tests.
 
