@@ -36,3 +36,40 @@
 * `react-dom` - Used to render React components and serves as the entry point to the DOM
 * `react-router-dom` - Used to handle routing in React apps
 * `vite ` - Used to improve the development experience of building user interfaces
+
+### Project Management & Task Delegation
+We used Discord as our primary platform for communication and Trello for tracking progress. The To-Do list on Trello was organised into Front-End and Back-End tasks. Each card was labelled to identify which feature the task related to and checklists were added to monitor progress and track the remaining steps required to complete each task.
+
+We decided to delegate tasks based on features, ensuring that all team members gained hands-on experience in both front-end and back-end development for their assigned features. This approach helped promote a well-rounded understanding of the entire project and allowed for efficient collaboration.
+
+<details>
+<summary>Trello Board Screenshots</summary>
+
+#### 28.11
+![Trello](./docs/trello-28.11.png)   
+
+#### 30.11
+![Trello](./docs/trello-30.11.png) 
+
+#### 2.12
+![Trello](./docs/trello-2.12.png)   
+
+#### 3.12
+![Trello](./docs/trello-3.12.png)   
+
+#### 6.12
+![Trello](./docs/trello-6.12.png)   
+
+#### 7.12
+![Trello](./docs/trello-7.12.png)   
+
+#### 8.12
+![Trello](./docs/trello-8.12.png)
+
+#### 13.12
+![Trello](./docs/trello-13.12.png) 
+
+#### 22.12
+![Trello](./docs/trello-22.12.png)    
+
+</details>
